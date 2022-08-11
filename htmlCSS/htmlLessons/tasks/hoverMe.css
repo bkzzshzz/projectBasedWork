@@ -1,9 +1,11 @@
+body {
+    padding:0;
+    margin:0;
+}
+
 .button {
     background-color:#09A097;
-    position:absolute;
     height:42px;
-    left:124px;
-    top: 183px;
 
 
     padding: 9px 43px 9px 41px;
@@ -27,10 +29,17 @@
 }
 
 .button1 {
-    position: relative;
 }
 
 .button2 {
     position: relative;
     left:289px;
+}
+
+.button-wrap {
+    display: flex;
+    align-items: flex-start;
+
+    width: 100vw;
+    height: 100vh;
 }
