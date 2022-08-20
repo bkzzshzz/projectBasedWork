@@ -1,0 +1,246 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 30px;
+}
+
+.cards {
+    padding: 50px;
+    border-radius: 5px;
+    align-items: center;
+    text-align: center;
+    box-shadow: 2px 2px 10px black;
+    font-weight: bold;
+}
+
+.cards h1 {
+    font-weight: 900;
+    font-size: 200%;
+}
+
+.cards span {
+    font-size: 100%;
+}
+
+.beginners {
+    background-color: #ffe979;
+}
+
+.marketers {
+    background-color: #b7f598;
+}
+
+.professionals {
+    background-color: #7ed5f8;
+}
+
+.options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.options button {
+    padding: 2px;
+    border: 1px;
+    border-radius: 10px;
+    margin: 2px;
+    padding: 5px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+.beg button {
+    background-color: #e7bf05;
+}
+
+.mark button {
+    background-color: #52d017;
+
+}
+
+.pro button {
+    background-color: #009ccd;
+}
+
+img {
+    margin-bottom: 20px;
+    width: 50%;
+    height: 75%;
+    object-fit: contain;
+}
+
+@media(min-width:641px) {
+    .container {
+        padding: 25spx;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        gap: 10px;
+    }
+
+    .cards {
+        height: 600px;
+        width: 33.33%;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        border-radius: 5px;
+        align-items: center;
+        text-align: center;
+        box-shadow: 2px 2px 10px black;
+    }
+
+    .cards h1 {
+        font-weight: 900;
+        font-size: 200%;
+    }
+
+    .cards span {
+        font-size: 100%;
+    }
+
+    .beginners {
+        background-color: #ffe979;
+    }
+
+    .marketers {
+        background-color: #b7f598;
+    }
+
+    .professionals {
+        background-color: #7ed5f8;
+    }
+
+    .options {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .options span {
+        border: 1px;
+        border-radius: 10px;
+        margin: 2px;
+        padding: 5px;
+        text-align: center;
+        font-weight: bold;
+        color: white;
+    }
+
+    .beg span {
+        background-color: #e7bf05;
+    }
+
+    .mark span {
+        background-color: #52d017;
+
+    }
+
+    .pro span {
+        background-color: #009ccd;
+    }
+
+    img {
+        width: 50%;
+        height: 50%;
+        object-fit: contain;
+    }
+}
+
+/* i set desktop above 1000px */
+@media(min-width:1000px) {
+    .container {
+        padding: 100px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        gap: 65px;
+    }
+
+    .cards {
+        height: 600px;
+        width: 33.33%;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        border-radius: 5px;
+        align-items: center;
+        text-align: center;
+        box-shadow: 2px 2px 10px black;
+    }
+
+    .cards h1 {
+        font-weight: 900;
+        font-size: 200%;
+    }
+
+    .cards span {
+        font-size: 100%;
+    }
+
+    .beginners {
+        background-color: #ffe979;
+    }
+
+    .marketers {
+        background-color: #b7f598;
+    }
+
+    .professionals {
+        background-color: #7ed5f8;
+    }
+
+    .options {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .options span {
+        border: 1px;
+        border-radius: 10px;
+        margin: 2px;
+        padding: 5px;
+        text-align: center;
+        font-weight: bold;
+        color: white;
+    }
+
+    .beg span {
+        background-color: #e7bf05;
+    }
+
+    .mark span {
+        background-color: #52d017;
+
+    }
+
+    .pro span {
+        background-color: #009ccd;
+    }
+
+    img {
+        width: 50%;
+        height: 50%;
+        object-fit: contain;
+    }
+}
