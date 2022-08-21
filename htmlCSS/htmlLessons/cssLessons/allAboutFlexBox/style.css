@@ -1,0 +1,50 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.fcontainer {
+    display: flex;
+    border: 2px solid gray;
+    height: 45vh;
+    /* flex-direction: row;
+    flex-direction: column;
+    flex-direction: row-reverse;
+    flex-direction: row-reverse; */
+    /* justify-content: flex-start; */
+    /* justify-content: center;
+    justify-content: flex-end; */
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.fitem {
+    background-color: #ff3456;
+    border: 2px solid brown;
+    margin: 12px;
+    /* margin from outside */
+    width: 122px;
+    height: 122px;
+}
+
+.item1 {
+    order: 2;
+}
+
+.item2 {
+    order: 4;
+}
+
+.item3 {
+    order: 3;
+}
+
+.item4 {
+    order: 1;
+}
+
+.item5 {
+    order: 5;
+}
