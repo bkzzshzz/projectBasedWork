@@ -1,0 +1,131 @@
+.container {
+    font-size: 30px;
+    width: 100%;
+    /* height: 500px; */
+    background: lightgray;
+    display: grid;
+
+    /*three coulumns of width 100px each */
+    /* grid-template-columns: 100px 100px 100px; */
+
+    /* change the size of columns and rows, 1fr takes 1 unit, 3fr takes 3 units, 100px stays the same*/
+    /* grid-template-columns: 1fr 100px 3fr; */
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    /* grid-template-columns: repeat(3, 1fr); */
+    /*use of repeat*/
+
+    /* grid-template-columns: repeat(3, minmax(90px, 1fr)); */
+    grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+
+    /*to have gap*/
+    /* grid-column-gap: 20px;
+    grid-row-gap: 5px; */
+    /* short hand*/
+    grid-gap: 10px;
+
+    /*two rows of width 50px each */
+    grid-template-rows: 1fr 1fr 1fr;
+
+    /* justify-items: center;
+    align-items: end; */
+
+    /* grid-template-areas:
+        "header header header",
+        "advert content content",
+        "footer footer footer"; */
+
+    /* use period to signify empty cell*/
+    /* grid-template-areas:
+        "header header header",
+        ". content content",
+        "footer footer footer"; */
+
+}
+
+.container2 {
+    font-size: 30px;
+    width: 100%;
+    /* height: 500px; */
+    background: lightgray;
+    display: grid;
+
+    /*three coulumns of width 100px each */
+    /* grid-template-columns: 100px 100px 100px; */
+
+    /* change the size of columns and rows, 1fr takes 1 unit, 3fr takes 3 units, 100px stays the same*/
+    /* grid-template-columns: 1fr 100px 3fr; */
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    /* grid-template-columns: repeat(3, 1fr); */
+    /*use of repeat*/
+
+    grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+
+    /*to have gap*/
+    /* grid-column-gap: 20px;
+    grid-row-gap: 5px; */
+    /* short hand*/
+    grid-gap: 10px;
+
+    /*two rows of width 50px each */
+    grid-template-rows: 1fr 1fr 1fr;
+
+    /* justify-items: center;
+    align-items: end; */
+
+    /* grid-template-areas:
+        "header header header",
+        "advert content content",
+        "footer footer footer"; */
+
+    /* use period to signify empty cell*/
+    /* grid-template-areas:
+        "header header header",
+        ". content content",
+        "footer footer footer"; */
+
+}
+
+
+.d1 {
+    background: lightskyblue;
+}
+
+.d2 {
+    background: lightsalmon;
+    /* justify-self: center; */
+}
+
+
+.d3 {
+    background: paleturquoise;
+    /* align-self: end; */
+    /* grid-area: footer; */
+    /* grid-area: 3/1/4/4; */
+    /*takes the entire first row*/
+}
+
+.d4 {
+    background: lightpink;
+}
+
+.d5 {
+    background: palegreen;
+    /* grid-column: 2 / 4;
+    grid-row: 2 / 4; */
+}
+
+.d6 {
+    background: skyblue;
+}
+
+.d7 {
+    background: tan;
+}
+
+.d8 {
+    background: ghostwhite;
+}
+
+.d9 {
+    background: yellowgreen;
+}

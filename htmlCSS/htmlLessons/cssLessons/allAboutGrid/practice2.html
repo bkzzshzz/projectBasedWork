@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid From CSS Tricks</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        .grid-container {
+            border: 2px solid black;
+            width: 500px;
+            height: 500px;
+            background: forestgreen;
+            display: grid;
+            grid-template-areas: "header header header"
+                "sidebar main main"
+                ". footer footer";
+            /* grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr; */
+            gap: 2px;
+        }
+
+        .grid-header {
+            background: blue;
+            grid-area: header;
+        }
+
+        .grid-sidebar {
+            background: rebeccapurple;
+            grid-area: sidebar;
+        }
+
+        .grid-content {
+            background: hotpink;
+            grid-area: main;
+        }
+
+        .grid-footer {
+            background: firebrick;
+            grid-area: footer;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="grid-header"></div>
+        <div class="grid-sidebar"></div>
+        <div class="grid-content"></div>
+        <div class="grid-footer"></div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Template Areas</title>
+    <style>
+        body,
+        html {
+            height: 100vh;
+        }
+
+        body {
+            margin: 0;
+            display: grid;
+            grid-template-columns: auto 27% 27% 27%;
+            grid-template-rows: 8% 30% auto 10%;
+            grid-template-areas:
+                "sidebar header header header"
+                "sidebar sect1 sect2 sect3"
+                "sidebar main main main"
+                "sidebar footer footer footer";
+        }
+
+        aside {
+            grid-area: sidebar;
+            background-color: blue;
+        }
+
+        header {
+            grid-area: header;
+            background-color: red;
+        }
+
+        .sect1 {
+            grid-area: sect1;
+            background-color: aliceblue;
+        }
+
+        .sect2 {
+            grid-area: sect2;
+            background-color: aliceblue;
+        }
+
+        .sect3 {
+            grid-area: sect3;
+            background-color: aliceblue;
+        }
+
+        main {
+            grid-area: main;
+            background: green;
+        }
+
+        footer {
+            grid-area: footer;
+            background: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <aside></aside>
+    <header></header>
+    <section class="sect1"></section>
+    <section class="sect2"></section>
+    <section class="sect3"></section>
+    <main></main>
+    <footer></footer>
+
+</body>
+
+</html>
