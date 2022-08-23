@@ -1,0 +1,168 @@
+@font-face {
+    font-family: oswald;
+    src: url("fonts/Oswald-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: montserrat;
+    src: url("fonts/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2");
+}
+
+body {
+    padding-top: 50px;
+    padding-right: 0;
+    padding-left: 0;
+    margin: 0;
+    background: white;
+}
+
+.page-preview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar {
+    display: flex;
+    width: 100%;
+    background: #f2f2f2;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    position: fixed;
+    top: 0;
+
+}
+
+.page-logo {
+    margin-right: auto;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+
+.icon {
+    margin: 15px;
+    cursor: pointer;
+}
+
+
+.icon-close {
+    margin-left: auto;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+    background-color: white;
+}
+
+.logo-image {
+    width: 64px;
+    height: 32px;
+
+    margin-left: 100px;
+    margin-right: auto;
+    cursor: pointer;
+}
+
+.menu-button {
+    width: 24px;
+    height: 24px;
+    margin-left: auto;
+    margin-right: 100px;
+    cursor: pointer;
+
+}
+
+.menu-button:hover {
+    color: red;
+}
+
+.hero-section {
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+    height: 870px;
+    width: 100%;
+    background-image: url("images/jtjtjtjuy-min.jpg");
+}
+
+.hero-section-grid {
+    display: grid;
+    grid-template-columns: 570px 247px 247px;
+    grid-template-rows: 197.5px 197.5px;
+    grid-template-areas: "big-text strategy ux-design""small-text development testing";
+    font-family: oswald;
+    padding-bottom: 0;
+    gap: 20px;
+    margin-right: 100px;
+
+}
+
+.big-text {
+    grid-area: big-text;
+    font-size: 96px;
+    color: white;
+}
+
+.small-text {
+    grid-area: small-text;
+    font-size: 16px;
+    color: white;
+    align-self: end;
+    font-family: montserrat;
+}
+
+u {
+    cursor: pointer;
+}
+
+.strategy {
+    grid-area: strategy;
+    width: 187px;
+    height: 137.5px;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: white;
+    margin: 5px;
+}
+
+.ux-design {
+    grid-area: ux-design;
+    width: 187px;
+    height: 137.5px;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: white;
+    margin: 5px;
+}
+
+.development {
+    grid-area: development;
+    width: 187px;
+    height: 137.5px;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: white;
+    margin: 5px;
+}
+
+.testing {
+    grid-area: testing;
+    width: 187px;
+    height: 137.5px;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: white;
+    margin: 5px;
+}
