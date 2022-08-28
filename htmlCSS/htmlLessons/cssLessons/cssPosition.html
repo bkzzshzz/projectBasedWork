@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position</title>
+    <style>
+        /* css position:static(default), absolute, relative, fixed, sticky */
+
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        .container {
+            background-color: khaki;
+            border: 2px solid brown;
+            height: 500px;
+            width: 3000px;
+        }
+
+        .box {
+            display: inline-block;
+            border: 2px solid red;
+            width: 150px;
+            height: 150px;
+            margin: 2px;
+        }
+
+        #box3 {
+            /* relative: relative to it's normal postion */
+            /* leaves space in the position*/
+            /* position: relative; */
+
+            /*absolute means relative to the parent*/
+            /* position: absolute;
+            top: 24px;
+            left: 124px; */
+
+            /* sitcky */
+            position: sticky;
+            top: 3px;
+            bottom: 33px;
+
+        }
+
+        .box5 {
+            border: 2px solid red;
+            width: 150px;
+            height: 150px;
+            margin: 2px;
+            position: sticky;
+            top: 1px;
+            bottom: 1px;
+            left: 50px;
+            right: 50px;
+        }
+
+        .box6 {
+            text-align: center;
+            border: 2px solid black;
+            width: 150px;
+            height: 150px;
+            margin: 2px;
+            position: absolute;
+            top: auto;
+            bottom: auto;
+            right: 15px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+    </div>
+    <div class="container"></div>
+    <div class="container"></div>
+    <div class="container"></div>
+    <div class="container"></div>
+    <div class="container"></div>
+    <div class="container"></div>
+    <div class="container"></div>
+    <div class="container">
+        <div class="box5"></div>
+        <div class="box6">Hi</div>
+    </div>
+    <div class="container"></div>
+    <div class="container"></div>
+
+
+</body>
+
+</html>
