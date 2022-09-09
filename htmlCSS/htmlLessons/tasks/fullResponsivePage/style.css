@@ -1,14 +1,14 @@
 @font-face {
     font-family: oswald;
     src: url("fonts/Oswald-Regular.ttf") format("truetype");
-    font-weight: normal;
+    font-weight: 100;
     font-style: normal;
 }
 
 @font-face {
     font-family: montserrat;
     src: url("fonts/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2") format("truetype");
-    font-weight: normal;
+    font-weight: 100;
     font-style: normal;
 
 }
@@ -16,7 +16,7 @@
 @font-face {
     font-family: open-sans;
     src: url("/htmlCSS/htmlLessons/tasks/fullResponsivePage/fonts/OpenSans-VariableFont_wdth\,wght.ttf") format("truetype");
-    font-weight: normal;
+    font-weight: 100;
     font-style: normal;
 }
 
@@ -26,27 +26,21 @@ body {
     padding-left: 0;
     margin: 0;
     background: white;
-    font-family: oswald, sans-serif;
 }
 
 .page-preview {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
     margin: 0;
     padding: 0;
 }
 
 .nav-bar {
     display: flex;
-    width: 100%;
     background: #f2f2f2;
     justify-content: center;
     align-items: center;
     height: 50px;
     position: fixed;
+    width: 100%;
     top: 0;
     z-index: 10;
 
@@ -73,17 +67,28 @@ body {
 
 header {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+    background-color: white;
+}
+
+.my-header {
+    display: flex;
     justify-content: space-between;
     align-items: center;
     height: 70px;
-    width: 1140px;
-    max-width: 1140px;
+    width: 100%;
     background-color: white;
 }
 
 .logo-image {
     width: 64px;
     height: 32px;
+    justify-self: center;
+    align-self: center;
+    margin-left: 20%;
     cursor: pointer;
 }
 
@@ -92,50 +97,73 @@ header {
     height: 24px;
     cursor: pointer;
     fill: blue;
+    margin-right: 20%;
 
 }
 
 .menu-button:hover {
-    color: red;
+    fill: yellow;
 }
 
 .hero-section {
     display: flex;
-    justify-content: flex-end;
-    align-items: end;
+    align-items: flex-end;
+    justify-content: center;
     height: 870px;
     width: 100%;
-    background-image: url("images/jtjtjtjuy-min.jpg");
-    /* padding-right: 100px; */
+    position: relative;
 }
 
-.hero-section-grid {
-    display: grid;
-    grid-template-columns: 570px 247px 247px;
-    grid-template-rows: 197.5px 197.5px;
-    grid-template-areas: "big-text strategy ux-design""small-text development testing";
-    font-family: oswald;
-    padding-bottom: 0;
-    gap: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 50px;
+.hero-section-background {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+}
+
+.hero-section-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    min-width: 992px;
     width: 1140px;
     max-width: 1140px;
+    height: 425px;
+    margin-bottom: 40px;
+    z-index: 1;
+}
+
+.hero-section-flex-text {
+    display: flex;
+    flex-direction: column;
+    width: 460px;
+}
+
+.hero-section-flex-cards {
+    width: 524px;
+    height: 425px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+
 }
 
 .big-text {
-    grid-area: big-text;
+
+    letter-spacing: 2.1px;
     font-size: 96px;
     color: white;
+    font-family: oswald;
+    margin-bottom: 0;
 }
 
 .small-text {
-    grid-area: small-text;
     font-size: 16px;
     color: white;
-    align-self: end;
     font-family: montserrat;
+    font-weight: 900;
+
 }
 
 u {
@@ -148,60 +176,58 @@ u:hover {
 }
 
 .strategy {
-    grid-area: strategy;
-    width: 187px;
-    height: 137.5px;
     padding: 30px;
     border-radius: 20px;
     background-color: white;
-    /* margin: 5px; */
 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    width: 187px;
+    height: 137.5px;
+
+    font-family: oswald;
 }
 
 .ux-design {
-    grid-area: ux-design;
-    width: 187px;
-    height: 137.5px;
     padding: 30px;
     border-radius: 20px;
     background-color: white;
-    margin: 5px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: oswald;
+    width: 187px;
+    height: 137.5px;
 }
 
 .development {
-    grid-area: development;
-    width: 187px;
-    height: 137.5px;
     padding: 30px;
     border-radius: 20px;
     background-color: white;
-    margin: 5px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: oswald;
+    width: 187px;
+    height: 137.5px;
 }
 
 .testing {
-    grid-area: testing;
-    width: 187px;
-    height: 137.5px;
     padding: 30px;
     border-radius: 20px;
     background-color: white;
-    margin: 5px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: oswald;
+    width: 187px;
+    height: 137.5px;
 }
 
 
@@ -239,6 +265,7 @@ h3 {
 
 .services h1 {
     font-size: 3.75rem;
+    font-family: oswald;
 }
 
 .services h4 {
@@ -315,28 +342,30 @@ h3 {
 }
 
 .why-choose-us {
+    display: flex;
+    justify-content: center;
     background-color: white;
+    width: 100%;
+    /* position: relative; */
 }
 
 .why-choose-us-container {
-    display: flex;
     width: 1140px;
     max-width: 1140px;
 }
 
 .blue-card {
+    position: relative;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     text-align: left;
-    /* flex-direction: column; */
     background-color: #1847b8;
     color: white;
     border-radius: 20px;
     margin: 60px 285px 0 0;
     width: 855px;
     height: 575px;
-    position: relative;
 }
 
 .inner-blue-card {
@@ -375,6 +404,8 @@ h3 {
     border-radius: 50px;
     cursor: pointer;
     font-family: open-sans;
+    text-transform: uppercase;
+    letter-spacing: 2.1px;
 }
 
 .inner-blue-card span {
@@ -395,10 +426,8 @@ h3 {
     max-height: 570px;
     border-radius: 20px;
     position: absolute;
-    top: 50px;
-    right: 0;
-    bottom: 0;
-    left: 570px;
+    top: 100px;
+    right: -300px;
 }
 
 .about-us-1 {
@@ -478,7 +507,7 @@ h3 {
     line-height: 1.6;
 }
 
-.about-us-1-container ul {
+.bullets {
     font-size: 20px;
     font-weight: 1;
     margin: 20px auto 0 0;
@@ -487,7 +516,16 @@ h3 {
     font-family: open-sans;
     color: gray;
     list-style: none;
+    position: relative;
+}
 
+.triangle-bullets {
+    width: 6px;
+    fill: orange;
+    position: absolute;
+    left: 445px;
+    top: 390px;
+    z-index: 200;
 
 }
 
@@ -503,7 +541,7 @@ h3 {
     border: none;
     margin: 30px auto 30px 0;
     cursor: pointer;
-    ;
+    letter-spacing: 2.1px;
 }
 
 .about-us-1-text span {
@@ -611,8 +649,6 @@ h3 {
 .about-us-2-inner {
     width: 1140px;
     max-width: 1140px;
-    margin: 0 107px;
-    padding: 40px;
     position: relative;
 }
 
@@ -625,7 +661,8 @@ h3 {
     background-color: blue;
     border-radius: 50%;
     position: absolute;
-    left: 900px;
+    top: 40px;
+    right: 0px;
     z-index: 1;
 }
 
@@ -641,7 +678,7 @@ h3 {
     border-radius: 20px;
     text-align: left;
     position: absolute;
-    left: 600px;
+    right: 100px;
     top: 150px;
     z-index: 2;
 }
@@ -653,7 +690,7 @@ h3 {
     min-height: 237px;
     fill: blue;
     position: absolute;
-    left: 80px;
+    left: 100px;
     top: 150px;
 }
 
@@ -860,6 +897,8 @@ h3 {
 }
 
 .effective-teams {
+    display: flex;
+    justify-content: center;
     background-color: #f2f2f2;
     width: 100%;
 }
@@ -878,8 +917,8 @@ h3 {
     background-color: #1847b8;
     border-radius: 20px;
     position: absolute;
-    left: 790px;
-    top: 260px;
+    right: -30px;
+    top: 250px;
 }
 
 .effective-teams-group-photo {
@@ -889,7 +928,7 @@ h3 {
     overflow: hidden;
     position: absolute;
     top: 60px;
-    left: 420px
+    right: 40px;
 }
 
 .group-photo {
@@ -910,7 +949,7 @@ h3 {
     flex-direction: column;
     position: absolute;
     top: 485px;
-    left: 300px;
+    left: 0px;
 
 }
 
@@ -963,7 +1002,7 @@ h3 {
     gap: 20px;
     position: absolute;
     top: 940px;
-    left: 360px
+    left: 0px
 }
 
 .contact {
@@ -989,6 +1028,7 @@ h3 {
 .contact svg {
     width: 64px;
     height: 64px;
+    min-height: 64px;
     fill: blue;
     margin: 0;
 }
@@ -998,6 +1038,7 @@ h3 {
     font-family: oswald;
     font-weight: 100;
     text-transform: uppercase;
+    margin-top: 0;
 }
 
 .contact p {
@@ -1087,7 +1128,7 @@ h3 {
     justify-content: space-between;
 }
 
-.label {
+label {
     font-size: 16px;
     font-family: open-sans;
 }
@@ -1159,3 +1200,5 @@ textarea {
     font-family: open-sans;
     color: white;
 }
+
+@media(max-width:1200px) {}
